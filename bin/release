@@ -4,5 +4,5 @@ cat <<YAML
 ---
 config_vars: {}
 default_process_types:
-  web: ./start
+  web: $HOME/sbin/sshd -e -f $HOME/etc/sshd_config && $HOME/websockify-0.6.0/run --verbose --wrap-mode=ignore $PORT localhost:2222
 YAML
