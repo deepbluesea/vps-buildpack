@@ -20,6 +20,8 @@ make
 
 cat <<SSHD_CONFIG > sshd_config
 AuthorizedKeysFile app/authorized_keys
+ClientAliveInterval 30
+HostKey /home/vcap/app/etc/ssh_host_rsa_key
 Port 2222
 UsePrivilegeSeparation no
 SSHD_CONFIG
