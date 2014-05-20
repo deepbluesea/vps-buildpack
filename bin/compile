@@ -18,7 +18,7 @@ cd openssh-6.6p1
 ./configure --prefix=$BUILD_PATH --with-privsep-path=$BUILD_PATH/empty
 make
 
-cat <<SSHD_CONFIG
+cat <<SSHD_CONFIG > sshd_config
 AuthorizedKeysFile app/authorized_keys
 Port 2222
 UsePrivilegeSeparation no
