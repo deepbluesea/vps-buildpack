@@ -27,6 +27,7 @@ UsePrivilegeSeparation no
 SSHD_CONFIG
 
 make install
+cd ..
 
 # websockify
 
@@ -42,6 +43,7 @@ cd libevent-2.0.21-stable
 ./configure --prefix=$BUILD_PATH
 make
 make install
+cd ..
 
 # tmux
 
@@ -51,6 +53,7 @@ cd tmux-1.9a
 ./configure --prefix=$BUILD_PATH
 make
 make install
+cd ..
 
 # cmake
 
@@ -60,6 +63,7 @@ cd cmake-2.8.12.2
 ./configure --prefix=$BUILD_PATH
 make
 make install
+cd ..
 
 # libgpg-error
 
@@ -69,6 +73,7 @@ cd libgpg-error-1.13
 ./configure --prefix=$BUILD_PATH
 make
 make install
+cd ..
 
 # gcrypt
 
@@ -78,6 +83,7 @@ cd libgcrypt-1.6.1
 ./configure --prefix=$BUILD_PATH
 make
 make install
+cd ..
 
 # weechat
 
@@ -89,6 +95,7 @@ cd build
 cmake .. -DPREFIX=$BUILD_PATH
 make
 make install
+cd ../..
 
 # create env file
 
