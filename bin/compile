@@ -89,3 +89,10 @@ cd build
 cmake .. -DPREFIX=$BUILD_PATH
 make
 make install
+
+# create env file
+
+cat <<ENV > env
+export LD_LIBRARY_PATH=$HOME/app/lib
+export PATH=$PATH:$HOME/app/bin
+ENV
