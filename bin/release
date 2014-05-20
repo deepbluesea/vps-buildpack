@@ -1,0 +1,8 @@
+ #!/bin/sh
+
+cat <<YAML
+---
+config_vars: {}
+default_process_types:
+  web: ./start
+YAML
