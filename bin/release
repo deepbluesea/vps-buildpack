@@ -2,7 +2,9 @@
 
 cat <<YAML
 ---
-config_vars: {}
+config_vars:
+  LD_LIBRARY_PATH: /home/vcap/app/lib
+  PATH: /usr/bin:/bin:/usr/sbin:/sbin:/home/vcap/app/bin
 default_process_types:
   web: ./start
 YAML
