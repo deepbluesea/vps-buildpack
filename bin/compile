@@ -91,16 +91,6 @@ rm libgpg-error-1.9.tar.bz2
 
 # gcrypt
 
-wget ftp://ftp.gnupg.org/gcrypt/libgcrypt/libgcrypt-1.6.3.tar.bz2
-tar xjf libgcrypt-1.6.3.tar.bz2
-cd libgcrypt-1.6.3
-./configure --prefix=$BUILD_PATH
-make
-make install
-cd ..
-rm -rf libgcrypt-1.6.3
-rm libgcrypt-1.6.3.tar.bz2
-
 # weechat
 
 wget http://weechat.org/files/src/weechat-1.2.tar.gz
