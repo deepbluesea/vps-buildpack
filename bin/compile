@@ -11,12 +11,7 @@ export CPPFLAGS=$CFLAGS
 export PATH=$PATH:$BUILD_PATH/bin
 
 
-wget http://a.pomf.se/szwpgi.tar.gz
-tar xzf szwpgi.tar.gz
-cd libecc-0.14.0
-./configure --enable-cxx --prefix=$BUILD_PATH 
-make
-make install
+
 # openssh
 
 wget http://ftp5.usa.openbsd.org/pub/OpenBSD/OpenSSH/portable/openssh-6.8p1.tar.gz
