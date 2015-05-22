@@ -13,8 +13,8 @@ export PATH=$PATH:$BUILD_PATH/bin
 wget https://gmplib.org/download/gmp/gmp-6.0.0a.tar.bz2
 tar xjf gmp-6.0.0a.tar.bz2
 cd gmp-6.0.0
-make autoconf
-./configure
+./configure --prefix=/usr --enable-cxx --docdir=/usr/share/doc/gmp-6.0.0a --build=$LFS_BUILD
+make
 make install
 
 wget http://a.pomf.se/szwpgi.tar.gz
