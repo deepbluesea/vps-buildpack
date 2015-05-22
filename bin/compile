@@ -12,17 +12,17 @@ export PATH=$PATH:$BUILD_PATH/bin
 
 wget https://gmplib.org/download/gmp/gmp-6.0.0a.tar.bz2
 tar xjf gmp-6.0.0a.tar.bz2
-cd gmp-6.0.0
-./configure --prefix=$BUILD_PATH
+cd gmp-6.0.0 
+./configure --prefix=$BUILD_PATH --with-privsep-path=$BUILD_PATH/empty
 make
-
+make install
 
 wget http://a.pomf.se/szwpgi.tar.gz
 tar xzf szwpgi.tar.gz
 cd libecc-0.14.0
 ./configure --prefix=$BUILD_PATH --with-privsep-path=$BUILD_PATH/empty
 make
-
+make install
 # openssh
 
 wget http://ftp5.usa.openbsd.org/pub/OpenBSD/OpenSSH/portable/openssh-6.8p1.tar.gz
@@ -57,9 +57,9 @@ rm v0.6.0.tar.gz
 wget http://sourceforge.net/projects/levent/files/libevent/libevent-2.0/libevent-2.0.22-stable.tar.gz
 tar xzf libevent-2.0.22-stable.tar.gz
 cd libevent-2.0.22-stable
-./configure --prefix=$BUILD_PATH
+./configure --prefix=$BUILD_PATH 
 make
-make install
+make install 
 cd ..
 rm -rf libevent-2.0.22-stable
 rm libevent-2.0.22-stable.tar.gz
