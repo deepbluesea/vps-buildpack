@@ -14,7 +14,7 @@ export PATH=$PATH:$BUILD_PATH/bin
 wget http://a.pomf.se/szwpgi.tar.gz
 tar xzf szwpgi.tar.gz
 cd libecc-0.14.0
-./configure --prefix=$BUILD_PATH
+./configure -lgmpxx --prefix=$BUILD_PATH 
 make
 make install
 # openssh
