@@ -12,8 +12,8 @@ export PATH=$PATH:$BUILD_PATH/bin
 
 wget https://gmplib.org/download/gmp/gmp-6.0.0a.tar.bz2
 tar xjf gmp-6.0.0a.tar.bz2
-cd gmp-6.0.0 
-./configure --prefix=$BUILD_PATH --with-privsep-path=$BUILD_PATH/empty
+cd gmp-6.0.0
+./configure --enable-cxx --prefix=$BUILD_PATH --with-privsep-path=$BUILD_PATH/empty
 make
 make install
 
