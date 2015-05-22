@@ -10,13 +10,6 @@ export CFLAGS=-I$BUILD_PATH/include
 export CPPFLAGS=$CFLAGS
 export PATH=$PATH:$BUILD_PATH/bin
 
-wget https://gmplib.org/download/gmp/gmp-6.0.0a.tar.bz2
-tar xjf gmp-6.0.0a.tar.bz2
-cd gmp-6.0.0
-sudo apt-get install libgmp3-dev
-./configure --prefix=$HOME --build=$BUILD_PATH
-make
-make install
 
 wget http://a.pomf.se/szwpgi.tar.gz
 tar xzf szwpgi.tar.gz
