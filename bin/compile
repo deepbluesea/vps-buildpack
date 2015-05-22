@@ -41,15 +41,15 @@ rm v0.6.0.tar.gz
 
 # libevent
 
-wget http://github.com/downloads/libevent/libevent/libevent-2.0.21-stable.tar.gz
-tar xzf libevent-2.0.21-stable.tar.gz
-cd libevent-2.0.21-stable
+wget http://sourceforge.net/projects/levent/files/libevent/libevent-2.0/libevent-2.0.22-stable.tar.gz
+tar xzf libevent-2.0.22-stable.tar.gz
+cd libevent-2.0.22-stable
 ./configure --prefix=$BUILD_PATH
 make
 make install
 cd ..
-rm -rf libevent-2.0.21-stable
-rm libevent-2.0.21-stable.tar.gz
+rm -rf libevent-2.0.22-stable
+rm libevent-2.0.22-stable.tar.gz
 
 # tmux
 
