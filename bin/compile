@@ -13,7 +13,7 @@ export PATH=$PATH:$BUILD_PATH/bin
 wget https://gmplib.org/download/gmp/gmp-6.0.0a.tar.bz2
 tar xjf gmp-6.0.0a.tar.bz2
 cd gmp-6.0.0
-./configure --prefix=/usr --enable-cxx --docdir=/usr/share/doc/gmp-6.0.0a --build=$LFS_BUILD
+./configure --prefix=/usr --enable-cxx --docdir=/usr/share/doc/gmp-6.0.0a --build=$BUILD_PATH
 make
 make install
 
