@@ -63,6 +63,56 @@ cd ..
 rm -rf tmux-1.9a
 rm wbrfbp.tar.gz
 
+# cmake
+
+wget http://www.cmake.org/files/v2.8/cmake-2.8.12.2.tar.gz
+tar xzf cmake-2.8.12.2.tar.gz
+cd cmake-2.8.12.2
+./configure --prefix=$BUILD_PATH
+make
+make install
+cd ..
+rm -rf cmake-2.8.12.2
+rm cmake-2.8.12.2.tar.gz
+
+# libgpg-error
+
+wget ftp://ftp.gnupg.org/gcrypt/libgpg-error/libgpg-error-1.13.tar.bz2
+tar xjf libgpg-error-1.13.tar.bz2
+cd libgpg-error-1.13
+./configure --prefix=$BUILD_PATH
+make
+make install
+cd ..
+rm -rf libgpg-error-1.13
+rm libgpg-error-1.13.tar.bz2
+
+# gcrypt
+
+wget ftp://ftp.gnupg.org/gcrypt/libgcrypt/libgcrypt-1.6.1.tar.bz2
+tar xjf libgcrypt-1.6.1.tar.bz2
+cd libgcrypt-1.6.1
+./configure --prefix=$BUILD_PATH
+make
+make install
+cd ..
+rm -rf libgcrypt-1.6.1
+rm libgcrypt-1.6.1.tar.bz2
+
+# weechat
+
+wget http://weechat.org/files/src/weechat-0.4.3.tar.gz
+tar xzf weechat-0.4.3.tar.gz
+cd weechat-0.4.3
+mkdir build
+cd build
+cmake .. -DPREFIX=$BUILD_PATH
+make
+make install
+cd ../..
+rm -rf weechat-0.4.3
+rm weechat-0.4.3.tar.gz
+
 # create env file
 
 cat <<ENV > env
