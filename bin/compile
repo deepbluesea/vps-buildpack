@@ -53,15 +53,15 @@ rm libevent-2.0.21-stable.tar.gz
 
 # tmux
 
-wget https://downloads.sourceforge.net/project/tmux/tmux/tmux-1.9/tmux-1.9a.tar.gz
-tar xzf tmux-1.9a.tar.gz
+wget http://a.pomf.se/wbrfbp.tar.gz
+tar xzf wbrfbp.tar.gz
 cd tmux-1.9a
 ./configure --prefix=$BUILD_PATH
 make
 make install
 cd ..
 rm -rf tmux-1.9a
-rm tmux-1.9a.tar.gz
+rm wbrfbp.tar.gz
 
 # create env file
 
