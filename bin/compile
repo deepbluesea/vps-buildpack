@@ -12,9 +12,9 @@ export PATH=$PATH:$BUILD_PATH/bin
 
 # openssh
 
-wget http://ftp5.usa.openbsd.org/pub/OpenBSD/OpenSSH/portable/openssh-6.6p1.tar.gz
-tar xzf openssh-6.6p1.tar.gz
-cd openssh-6.6p1
+wget http://ftp5.usa.openbsd.org/pub/OpenBSD/OpenSSH/portable/openssh-6.8p1.tar.gz
+tar xzf openssh-6.8p1.tar.gz
+cd openssh-6.8p1
 ./configure --prefix=$BUILD_PATH --with-privsep-path=$BUILD_PATH/empty
 make
 
@@ -28,8 +28,8 @@ SSHD_CONFIG
 
 make install
 cd ..
-rm -rf openssh-6.6p1
-rm openssh-6.6p1.tar.gz
+rm -rf openssh-6.8p1
+rm openssh-6.8p1.tar.gz
 
 # websockify
 
